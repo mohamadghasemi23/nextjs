@@ -26,7 +26,7 @@ export default function OfferBox({}: Props) {
        </div>
        <div className='flex flex-row  justify-center mt-6'>
          <motion.div    animate={{ x: [-50,0] }} className='-mr-5 bg-white rounded-full p-1'><Avatar className="w-16 h-16"  /></motion.div>
-         <motion.div animate={{ x: [-120,0] }} className='-mr-5 bg-white rounded-full p-1'><Avatar className="w-16 h-16"  /></motion.div>
+         <motion.div animate={{ x:  [-120,0] }} className='-mr-5 bg-white rounded-full p-1'><Avatar className="w-16 h-16"  /></motion.div>
          <motion.div animate={{ x: [-190,0]}} className=' -mr-5 bg-white rounded-full p-1'><Avatar className="w-16 h-16"  /></motion.div>
        </div>
        <div className=' flex flex-row justify-center mt-8'>
@@ -34,6 +34,11 @@ export default function OfferBox({}: Props) {
        </div>
        </motion.div>
     </div>
+
+    {/* //theird commit */}
+    {/* //theird commit */}
+    {/* //theird commit */}
+
     </>
   )
 }
