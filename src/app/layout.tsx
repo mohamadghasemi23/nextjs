@@ -15,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`$inter.className bg-gradient-to-r from-blue-800 to-indigo-900  h-screen`}>      
+        <div className='container mx-auto my-auto lg:mt-32 border  bg-white '>
+           {children}
+           </div>        
+        </body>
     </html>
   )
 }
