@@ -1,21 +1,24 @@
 'use client'
 import React from 'react'
-import LoginBox from './LoginBox'
-import Logo from './Logo'
-import Menu from './Menu'
-import Rightbox from './Rightbox'
+import Login from './navbar/Login'
+import Logo from './navbar/Logo'
+import MainMenu from './navbar/MainMenu'
+
 
 type Props = {}
 
 export default function NavBar({}: Props) {
   return (
-    <div className='shadow-lg border h-16 items-center flex flex-row justify-between
-    hover:bg-amber-500'>
-    <Logo/>
-    <Menu/>
-    <LoginBox/>
-    <Rightbox title="منوی سمت راست"  number="55"  />
     
-    </div>
+    <div className='relative flex flex-row mx-8   h-24 z-20  items-center justify-center'>
+
+        <Logo/>
+        <MainMenu/>
+        <Login/>
+        </div>
+
+
+ 
+    
   )
 }

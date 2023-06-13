@@ -1,27 +1,21 @@
+import MainText from '@/components/MainText'
+import MiddleText from '@/components/MiddleText'
+import SlideBar from '@/components/SlideBar'
+import UnderText from '@/components/UnderText'
 import React from 'react'
-import { Bars3Icon } from '@heroicons/react/24/solid'
 type Props = {}
 
 export default function page({}: Props) {
   return (
-    <div className='main'>
-    <div className='relative flex flex-row space-x-2   md:space-x-7  h-24 shadow-lg border items-center justify-center'>
-        <div className='absolute  left-5'>Logo</div>
-        <div className='hidden sm:block'> About us</div>
-        <div className='hidden sm:block'>Practice</div>
-        <div className='hidden sm:block'>Our teachers</div>
-        <div className='hidden sm:block'>Gallery</div>
-        <div className='hidden sm:block'>Contact us</div>
-        <div className='absolute  right-12'>Login</div>
-        <div className='absolute  sm:hidden  right-5'> <Bars3Icon className="h-6 w-6 " /></div>
-        <div className=""><img src="./right.png" alt="react logo" style={{ width: '400px', }}/></div>
-        </div>
+    <div className='flex flex-1 flex-col items-start justify-start '>
+      <div className=' w-full'> <MainText/></div>
 
+      <div className='   flex flex-1 w-full justify-center items-center mt-32'> <UnderText/></div>
+      <div className='   flex flex-1  w-full h-auto justify-center items-center  mt-16 '>< SlideBar/></div>
+      <div className='   flex flex-1  w-full justify-center items-center   mt-16 '>< MiddleText/></div>
+     
+     
 
-    <div>part1</div>
-    <div>part2</div>
-    <div>part3</div>
-    
     </div>
   )
 }
