@@ -75,7 +75,23 @@ export default function CarouselBar({}: Props) {
             <div className='flex flex-1 items-center justify-center bg-lime-600' >
                 
 
-           
+            <Carousel
+          /*
+          swipeable={false}
+          draggable={false}
+          */
+          responsive={responsive}
+          ssr
+          infinite={false}
+          beforeChange={() =>  this.setState({ isMoving: true })}
+          afterChange={() => this.setState({ isMoving: false })}
+          containerClass="first-carousel-container container"
+          deviceType={this.props.deviceType}
+        >
+          {fakerData.map(card => {
+            return <OfferBox  />;
+          })}
+        </Carousel>
                 
             </div>
 
